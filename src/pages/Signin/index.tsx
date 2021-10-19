@@ -58,7 +58,7 @@ const Signin: React.FC = () => {
                 description: 'Ocorreu um erro ao fazer login, cheque as credenciais.',
               });
         }
-    },[signIn,addToast]);
+    },[signIn,addToast,history]);
 
     return (
         <Container>

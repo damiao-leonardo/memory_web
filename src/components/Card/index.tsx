@@ -29,9 +29,9 @@ const Card: React.FC<CardContainer> = ({title,description,tags}) => {
                 </div>
             </Content>
             <Footer>
-                <a href=''><FiCopy /></a>
-                <a href=''><FiEdit /></a>
-                <a href=''><FiTrash /></a>
+                <a href='/home'><FiCopy /></a>
+                <a href='/home'><FiEdit /></a>
+                <a href='/home'><FiTrash /></a>
             </Footer>
         </Container>
     )

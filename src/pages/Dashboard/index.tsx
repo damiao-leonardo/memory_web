@@ -1,7 +1,6 @@
-import React,{useCallback, useState, useEffect} from 'react';
+import React,{useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth} from '../../hooks/auth';
-import { useHistory } from 'react-router-dom';
 
 import { FiSearch,FiLogOut} from 'react-icons/fi';
 import Input from '../../components/Input';
@@ -24,8 +23,6 @@ const Dashboard: React.FC = () => {
   const [memoriesFilter,setMemoriesFilter] = useState<MemoryData[]>([]); 
 
   const {signOut } = useAuth();
-
-  const history = useHistory();
 
   function searchMemories(field : string) {
     const newMemories = memories.filter(item => (item.key.match(field)));

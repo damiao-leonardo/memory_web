@@ -45,6 +45,7 @@ const Signin: React.FC = () => {
               });
 
             history.push('/dashboard');
+            
 
         } catch(err){
             if (err instanceof Yup.ValidationError) {

@@ -88,7 +88,6 @@ export const AddCard = styled.div`
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     overflow:auto;
-    border:1px solid black;
 
     button{
       width: 100%;

@@ -18,6 +18,6 @@ jobs:
         node-version: 12.x
         cache: 'npm'
     - run: yarn 
-    - run: yarn test
+    - run: yarn test --coverage
     env: 
      CI: true

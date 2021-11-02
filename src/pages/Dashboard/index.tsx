@@ -46,6 +46,7 @@ const Dashboard: React.FC = () => {
         <Brand>
             <a href={'www.google.com'}>
               <img 
+                  data-testid="img-header"
                   src="https://icons-for-free.com/iconfiles/png/512/part+1+github-1320568339880199515.png"
                   width={50}
                   height={50}
@@ -55,12 +56,12 @@ const Dashboard: React.FC = () => {
         </Brand>
         <Menu>
           <Start>
-             <Link to={'/home'} >Itens</Link>
+             <Link data-testid="link" to={'/home'} >Itens</Link>
              <Link to={'/home'} >Tags</Link>
              <Link to={'/home'} >List</Link>
           </Start>
           <End>         
-             <button type='button' onClick={() => signOut()} ><FiLogOut size={25}/></button>
+             <button data-testid="button_signout" type='button' onClick={() => signOut()} ><FiLogOut size={25}/></button>
           </End>
         </Menu>
       </Header>
@@ -75,7 +76,7 @@ const Dashboard: React.FC = () => {
         ))}   
       </Container>
       <AddCard>
-         <button type="button">adicionar</button>
+         <button type="button" data-testid="button_new">adicionar</button>
       </AddCard>
     </>
   );
